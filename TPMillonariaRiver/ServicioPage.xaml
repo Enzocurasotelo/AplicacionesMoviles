@@ -1,0 +1,49 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TPMillonariaRiver.ServicioPage"
+             BackgroundColor="Black"
+             Title="INFORMACIÓN DEL SERVICIO">
+
+    <Grid>
+
+        <StackLayout BackgroundColor="#8B0000"
+                     HeightRequest="50"
+                     VerticalOptions="Start"
+                     HorizontalOptions="Fill">
+            <Label Text="INFORMACIÓN DEL SERVICIO"
+                   HorizontalOptions="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   Padding="0,10" />
+        </StackLayout>
+
+        <ScrollView>
+            <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="CenterAndExpand">
+
+                <Label Text="PÁGINA MILLONARIA EN LA PAMPA"
+                       TextColor="White"
+                       FontSize="16"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center" />
+
+                <Label Text="El Club Atlético River Plate presenta su nueva aplicación móvil, pensada especialmente para los hinchas pampeanos. A través de ella, podrán comprar entradas e indumentaria oficial del club de manera rápida y segura."
+                       TextColor="White"
+                       FontSize="14"
+                       HorizontalTextAlignment="Start"
+                       LineBreakMode="WordWrap" />
+
+                <Button Text="VOLVER AL MENÚ"
+                        Clicked="Volver"
+                        BackgroundColor="#222222AA"
+                        TextColor="White"
+                        CornerRadius="25"
+                        FontAttributes="Bold"
+                        HeightRequest="45"
+                        HorizontalOptions="Center"
+                        Margin="0,20,0,0" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

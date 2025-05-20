@@ -1,0 +1,119 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TPMillonariaRiver.MenuPage"
+             BackgroundColor="Black"
+             Title="MENÚ PRINCIPAL">
+
+    <Grid>
+        <Image Source="logo.jpg"
+               Aspect="AspectFill"
+               HorizontalOptions="Fill"
+               VerticalOptions="Fill" />
+
+        <BoxView BackgroundColor="#00000066"
+                 HorizontalOptions="Fill"
+                 VerticalOptions="Fill" />
+
+        <StackLayout BackgroundColor="#8B0000"
+                     HeightRequest="50"
+                     VerticalOptions="Start"
+                     HorizontalOptions="Fill">
+            <Label Text="MENÚ PRINCIPAL"
+                   HorizontalOptions="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   Padding="0,10" />
+        </StackLayout>
+
+        <VerticalStackLayout Padding="40,0" Spacing="25"
+                             VerticalOptions="End"
+                             Margin="0,0,0,60">
+
+            <Frame BackgroundColor="#222222AA"
+                   CornerRadius="25"
+                   HasShadow="False"
+                   Padding="0"
+                   HeightRequest="50"
+                   HorizontalOptions="Fill">
+                <Grid ColumnDefinitions="40,*"
+                      VerticalOptions="Center"
+                      Padding="10,0">
+                    <Image Source="icono_user.png"
+                           HeightRequest="20"
+                           WidthRequest="20"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Grid.Column="0" />
+                    <Label Text="ACERCA DEL DESARROLLADOR"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           FontSize="14"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           Grid.Column="1" />
+                    <Button BackgroundColor="Transparent"
+                            Clicked="IrDesarrollador"
+                            Grid.ColumnSpan="2" />
+                </Grid>
+            </Frame>
+
+            <Frame BackgroundColor="#222222AA"
+                   CornerRadius="25"
+                   HasShadow="False"
+                   Padding="0"
+                   HeightRequest="50"
+                   HorizontalOptions="Fill">
+                <Grid ColumnDefinitions="40,*"
+                      VerticalOptions="Center"
+                      Padding="10,0">
+                    <Image Source="icono_info.png"
+                           HeightRequest="20"
+                           WidthRequest="20"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Grid.Column="0" />
+                    <Label Text="INFORMACIÓN DEL SERVICIO"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           FontSize="14"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           Grid.Column="1" />
+                    <Button BackgroundColor="Transparent"
+                            Clicked="IrServicio"
+                            Grid.ColumnSpan="2" />
+                </Grid>
+            </Frame>
+
+            <Frame BackgroundColor="#222222AA"
+                   CornerRadius="25"
+                   HasShadow="False"
+                   Padding="0"
+                   HeightRequest="50"
+                   HorizontalOptions="Fill">
+                <Grid ColumnDefinitions="40,*"
+                      VerticalOptions="Center"
+                      Padding="10,0">
+                    <Image Source="icono_logout.png"
+                           HeightRequest="20"
+                           WidthRequest="20"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Grid.Column="0" />
+                    <Label Text="CERRAR SESIÓN"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           FontSize="14"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           Grid.Column="1" />
+                    <Button BackgroundColor="Transparent"
+                            Clicked="CerrarSesion"
+                            Grid.ColumnSpan="2" />
+                </Grid>
+            </Frame>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

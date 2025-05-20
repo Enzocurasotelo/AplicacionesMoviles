@@ -1,0 +1,14 @@
+# Archivos de compilación y temporales
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Archivos específicos de plataformas
+*.apk
+*.aab
+*.app
+
+# Archivos de MacCatalyst/iOS/Android simuladores
+**/net*/**/TPMillonariaRiver.nfloat.g.cs

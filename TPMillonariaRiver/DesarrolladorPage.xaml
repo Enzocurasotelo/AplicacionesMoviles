@@ -1,0 +1,65 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TPMillonariaRiver.DesarrolladorPage"
+             BackgroundColor="Black"
+             Title="ACERCA DEL DESARROLLADOR">
+
+    <Grid>
+        <StackLayout BackgroundColor="#8B0000"
+                     HeightRequest="50"
+                     VerticalOptions="Start"
+                     HorizontalOptions="Fill">
+            <Label Text="ACERCA DEL DESARROLLADOR"
+                   HorizontalOptions="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   Padding="0,10" />
+        </StackLayout>
+
+        <VerticalStackLayout Padding="30" Spacing="15" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+
+            <Frame Padding="0" HeightRequest="150" WidthRequest="150"
+                   CornerRadius="75" HasShadow="False" BackgroundColor="LightGray"
+                   HorizontalOptions="Center">
+                <Image Source="avatar.png"
+                       Aspect="AspectFit"
+                       HeightRequest="110"
+                       WidthRequest="110"
+                       HorizontalOptions="Center" />
+            </Frame>
+
+            <Label Text="Enzo Cura Sotelo"
+                   TextColor="White"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center" />
+
+            <Label Text="Tec. en Desarrollo de Software"
+                   TextColor="White"
+                   FontSize="14"
+                   HorizontalTextAlignment="Center" />
+
+            <Label Text="Instituto Tecnológico de Educación Superiores"
+                   TextColor="White"
+                   FontSize="14"
+                   HorizontalTextAlignment="Center" />
+
+            <Label Text="encuso1999@gmail.com"
+                   TextColor="White"
+                   FontSize="14"
+                   HorizontalTextAlignment="Center" />
+
+            <Button Text="VOLVER AL MENÚ"
+                    Clicked="Volver"
+                    BackgroundColor="#222222AA"
+                    TextColor="White"
+                    CornerRadius="25"
+                    FontAttributes="Bold"
+                    HeightRequest="45"
+                    HorizontalOptions="Center"
+                    Margin="0,30,0,0" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
